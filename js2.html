@@ -53,13 +53,7 @@
    }
   </style>
   <script>
-   function f()
-{
-document.getElementById("pic1").src="2.gif";
-document.getElementById("body1").style.backgroundColor="blue";
-document.getElementById("body1").style.backgroundColor="yellow";
-}
- 
+  
 function g()
 {
 if(document.getElementById("сс1").selectedIndex==0)
@@ -70,6 +64,9 @@ document.getElementById("body").style.backgroundColor="red";
  
 if(document.getElementById("сс3").selectedIndex==2)
 document.getElementById("body").style.backgroundColor="pink";
+ 
+ if(document.getElementById("сс3").selectedIndex==2)
+document.getElementById("body").style.backgroundColor="blue";
  
  
 }
@@ -92,7 +89,7 @@ document.getElementById("tt1").value="Привет, Мир!!!";
 <input type="checkbox" name="ch1" id="cc1" value="cc1" onclick="g()">Зеленый<br>
 <input type="checkbox" name="ch1" id="cc2" value="cc2" onclick="g()">Красный<br>
 <input type="checkbox" name="ch1" id="cc3" value="cc3" onclick="g()">Розовый<br>
-<input type="checkbox" name="ch1" id="cc4" value="cc4">група чекбоксів cc2<br>
+<input type="checkbox" name="ch1" id="cc4" value="cc4" onclick="g()">Синий<br>
     <input type="text" name="tx1" id="tt1" value="значення за замовченням" onclick="r()"><br>
     </form>
       </div>
