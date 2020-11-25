@@ -52,6 +52,16 @@
     clear: both; /* Отмена обтекания */ 
    }
   </style>
+  <script> 
+  var today = new Date();
+   function f(x)
+   {document.getElementById('tt1').value=document.getElementById('tt1').value+x;}
+   function g(x)
+   {var t=parseInt(document.getElementById('tt1').value);
+if(x==1) today.setYear(t);
+if(x==2) today.setMonth(t);
+if(x==3) today.setDate(t); }
+  </script>
  </head>
  <body>
   <div id="container">
